@@ -9,7 +9,7 @@ import (
 
 func main() {
 	board_port := helpers.UnrwrapError(utils.GetSerialPort())
-	serial_port := helpers.UnrwrapError(utils.EstablishBoardComunitation(board_port))
+	serial_port := helpers.UnrwrapError(utils.EstablishBoardCommunication(board_port))
 
 	for {
 		usage := helpers.UnrwrapError(utils.GetMemoryUsage())

@@ -7,7 +7,7 @@ import (
 	"go.bug.st/serial"
 )
 
-func EstablishBoardComunitation(board_port string) (serial.Port, error) {
+func EstablishBoardCommunication(board_port string) (serial.Port, error) {
 	mode := &serial.Mode{BaudRate: 115200}
 
 	port, err := serial.Open(board_port, mode)
